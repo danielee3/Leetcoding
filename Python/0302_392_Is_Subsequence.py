@@ -1,3 +1,11 @@
+"""
+March Leetcoding Challenge Day 1
+392. Is Subsequence
+[Solution]
+Language: Python
+Time Complexity: O(n)
+Space Complexity: O(1)
+"""
 class Solution(object):
     def isSubsequence(self, s, t):
         """
