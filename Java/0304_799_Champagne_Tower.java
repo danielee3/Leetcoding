@@ -13,7 +13,8 @@ class Solution {
         double[][] glasses = new double[query_row+1][query_row+1];
         glasses[0][0] = poured;
         for (int r = 1; r <= query_row; r++) {
-            for (int c = 0; c <= r; c++){
+            int left = (int)Math.max(0, query_glass-query_row+r);
+            for (int c = left; c <= query_glass; c++){
                 if (c > 0 && glasses[r-1][c-1] > 1) {
                     glasses[r][c] += (glasses[r-1][c-1] - 1) / 2.0;
                 }
