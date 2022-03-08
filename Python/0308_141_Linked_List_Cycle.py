@@ -23,7 +23,7 @@ class Solution(object):
         if head.next is None:
             return False
         pointer = head
-        while pointer is not None and pointer.next is not None:
+        while pointer and pointer.next:
             pointer = pointer.next.next
             head = head.next
             if head is pointer:
