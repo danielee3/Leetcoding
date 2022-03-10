@@ -22,15 +22,15 @@ public:
         ListNode* head = new ListNode(0);
         ListNode* curr = head;
         int carry;
-        while (l1 != nullptr || l2 != nullptr) {
+        while (l1 || l2) {
             carry = curr->val / 10;
             curr->val = curr->val % 10;
-            int newVal = (l1==nullptr)?0:l1->val;
-            newVal += (l2==nullptr)?0:l2->val;
-            curr->next = new ListNode(newVal + carry);
+            int newVal = l1?l1->val:0;
+            newVal += l2?l2->val:0;
+            curr->next = new ListNode (newVal + carry);
             curr = curr->next;
-            if (l1 != nullptr) l1 = l1->next;
-            if (l2 != nullptr) l2 = l2->next;
+            if (l1) l1 = l1->next;
+            if (l2) l2 = l2->next;
         }
         carry = curr->val / 10;
         curr->val = curr->val % 10;
