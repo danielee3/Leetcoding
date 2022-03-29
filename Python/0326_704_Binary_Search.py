@@ -1,5 +1,5 @@
 """
-March Leetcoding Challenge Day 25
+March Leetcoding Challenge Day 26
 704. Binary Search
 [Solution]
 Language: Python
