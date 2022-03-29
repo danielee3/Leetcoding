@@ -1,5 +1,5 @@
 """
-March Leetcoding Challenge Day 26
+March Leetcoding Challenge Day 27
 1337. The K Weakest Rows in a Matrix
 [Solution]
 Language: Python
